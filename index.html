@@ -1,129 +1,379 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Lee Knoyer Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap Section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- End Bootsrap Section -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- NavBar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="projectsummary.html">Summary</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://github.com/knoyerlee/DiceRollerV2">Dice Roller</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://github.com/knoyerlee/PasswordEvalTool">Password Generator</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://github.com/knoyerlee/DiscordCatBot">Discord Bot</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <!-- Home Page Header -->
+    <header class="container-fluid header">
+        <div class="row">
+            <img src="images/profile-image.jpg" alt="" class="col-2 d-none d-xl-block d-xxl-none">
+            <div class="col text-left">
+                <h2> Professional Summary</h2>
+                <p class="text-left">I am a Security Engineer working in an Agile environment with a focus on automation and cloud technologies. I use tools like programming languages, infrastructure as code, and CI/CD pipelines to develop solutions that alleviate manual efforts of other employees.</p>
+            </div>
+        </div>
+    </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home Page</a></li>
-								<li><a href="profsum.html">Professional Summary</a></li>
-								<li><a href="indexp.html">Industry Experience</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+    <hr>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Welcome to My Portfolio</h2>
-							<p>This is a showcase of my projects and abilities. You can also gain a deeper insight into my professional background.</p>
-						</div>
-					</section>
+    <!-- Home Page Expericence Section -->
+    <section class="container-fluid job-experience">
+        <div class="row">
+            <div class="col">
+                <h4>Expericence</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Security Engineer, Citizens Bank; Remote, 2021 - Present</h6>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Develop automated metric reporting tools using <span id="pythonLink" class="modal-spans" data-toggle="modal" data-target="#pythonModal">Python</span> and <span id="pandasLink" class="modal-spans" data-toggle="modal" data-target="#pandasModal">Pandas</span>.</li>
+                    <li>Provision new <span id="iacLink" class="modal-spans" data-toggle="modal" data-target="#iacModal">infrastructure as code (IAC)</span> solutions using <span id="terraformLink" class="modal-spans" data-toggle="modal" data-target="#terraformModal">Terraform</span>.</li>
+                    <li>Integrate new stages into the <span id="jenkinsLink" class="modal-spans" data-toggle="modal" data-target="#jenkinsModal">Jenkins</span> CI/CD pipeline.</li>
+                    <li>Convert existing infrastructure into deployable code.</li>
+                </ul>
+            </div>
+        </div>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Technology Specialist, PNC Bank; Remote, 2020 - 2021</h6>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Developed an <span id="angularLink" class="modal-spans" data-toggle="modal" data-target="#angularModal">Angular</span> application to highlight multiple DevOps tools.</li>
+                    <li>Developed a suite of automated testing scripts using <span id="seleniumLink" class="modal-spans" data-toggle="modal" data-target="#seleniumModal">Selenium</span> with <span id="javaLink" class="modal-spans" data-toggle="modal" data-target="#javaModal">Java</span>.</li>
+                    <li>Conducted testing based on the <span id="owaspLink" class="modal-spans" data-toggle="modal" data-target="#owaspModal">OWASP Top 10</span> Web Application Security Risks.</li>
+                    <li>Provided manual testing coverage for newly developed applications.</li>
+                </ul>
+            </div>
+        </div>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="profsum.html" class="image"><img src="images\profsummary.jpg" alt="Professional summary section" /></a>
-									<div class="content">
-										<h2 class="major">Professional Summary</h2>
-										<p>I am a technology professional with several years of experience in various frameworks and languages as well as a master’s degree in Cybersecurity. I have a passion for technology and developing my technical skills both inside and outside of the workplace.</p>
-										<a href="profsum.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Help Desk Technician, CAL U; California, PA 2019 - 2020</h6>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Managed user accounts in active directory.</li>
+                    <li>Resolved network access control (NAC) issues related to the Bradford agent.</li>
+                    <li>Educated clients on rules surrounding their active directory accounts.</li>
+                    <li>Triaged and input user requests into a ticketing system for resolution.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="indexp.html" class="image"><img src="images/industry.jpg" alt="Industry experience section" /></a>
-									<div class="content">
-										<h2 class="major">Industry Experience</h2>
-										<p>This section is meant to give you a better understanding of the industries I have worked in.</p>
-										<a href="indexp.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+    <hr>
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Projects</h2>
-									<p>A quick snapshot of some different projects that I have worked on</p>
-									<section class="features">
-										<article>
-											<a href="https://github.com/knoyerlee/DiceRollerV2 " target="_blank" rel="noopener noreferrer" class="image"><img src="images/diceroller.jpg" alt="Image of a dice rolling application" /></a>
-											<h3 class="major">Dice Rolling Application</h3>
-											<p>This application will roll any amount of a specified die category and return the results to you.</p>
-											<a href="https://github.com/knoyerlee/DiceRollerV2" target="_blank" rel="noopener noreferrer" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="https://github.com/knoyerlee/PasswordEvalTool" target="_blank" rel="noopener noreferrer" class="image"><img src="images/passeval.jpg" alt="Image of a random password generator application" /></a>
-											<h3 class="major">Password Generator and Evaluator</h3>
-											<p>This application will take an existing password and tell you if it is strong. It can also generate a strong password for you.</p>
-											<a href="https://github.com/knoyerlee/PasswordEvalTool" target="_blank" rel="noopener noreferrer" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="https://github.com/knoyerlee/DiscordCatBot" target="_blank" rel="noopener noreferrer" class="image"><img src="images/cat.jpg" alt="Image of a cat" /></a>
-											<h3 class="major">Discord Cat Bot</h3>
-											<p>An application that acts as a chat bot in discord that returns cat facts and breeds using an api to retrieve the data.</p>
-											<a href="https://github.com/knoyerlee/DiscordCatBot" target="_blank" rel="noopener noreferrer" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="https://github.com/knoyerlee" target="_blank" rel="noopener noreferrer" class="image"><img src="images/github.jpg" alt="Image of an IDE" /></a>
-											<h3 class="major">Want More?</h3>
-											<p>Simply click below to follow the link to my github page where you can see many more projects I have worked on.</p>
-											<a href="https://github.com/knoyerlee" target="_blank" rel="noopener noreferrer" class="special">Learn more</a>
-										</article>
-									</section>
-								</div>
-							</section>
+    <!-- Certifications -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Certifications and Skills</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul type="circle">
+                    <li>Azure Fundamentals</li>
+                    <li>AWS Certified Cloud Practitioner</li>
+                    <li>CompTIA Network+</li>
+                    <li>CompTIA Security+</li>
+                    <li>CompTIA A+</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul type="circle">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Terraform</li>
+                    <li>Jenkins</li>
+                    <li>Bitbucket/GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-					</section>
+    <hr>
 
-				<!-- Footer -->
-				<section id="footer">
-					<div class="inner">
-						<h2 class="major">Contact Me</h2>
-						<p>Feel free to check me out on any of the channels listed below</p>						
-						<ul class="contact">
-							<li class="icon brands fa-github"><a href="https://github.com/knoyerlee" target="_blank" rel="noopener noreferrer">github.com/knoyerlee</a></li>
-							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/lee-knoyer-343665b8/" target="_blank" rel="noopener noreferrer">linkedin.com/in/lee-knoyer-343665b8/</a></li>
-						</ul>
-					</div>
-				</section>
+    <!-- Home Page Education Section -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Education</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>California University of Pennsylvania</h6>
+            </div>
+            <div class="col-md-6">
+                <ul type="circle">
+                    <li>Professional Science Master's in Cybersecurity</li>
+                </ul>
+            </div>
+        </div>
 
-			</div>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Pennsylvania State University</h6>
+            </div>
+            <div class="col-md-6">
+                <ul type="circle">
+                    <li>Bachelor of Science in Nursing</li>
+                </ul>
+            </div>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Pennsylvania State University</h6>
+            </div>
+            <div class="col-md-6">
+                <ul type="circle">
+                    <li>Associate of Science in Nursing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-	</body>
+    <!-- Modal Section -->
+    <!-- Python Modal -->
+    <div class="modal fade" id="pythonModal" tabindex="-1" role="dialog" aria-labelledby="pythonModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Python</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
+                <a href="https://docs.python.org/3/">Link to the Official Python Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pandas Modal -->
+    <div class="modal fade" id="pandasModal" tabindex="-1" role="dialog" aria-labelledby="pandasModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pandas</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+                    built on top of the Python programming language.</p>
+                <a href="https://pandas.pydata.org/docs/index.html">Link to the Official Pandas Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- IAC Modal -->
+    <div class="modal fade" id="iacModal" tabindex="-1" role="dialog" aria-labelledby="iacModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Infrastructure as Code (IAC)</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Infrastructure as Code (IAC) is the managing and provisioning of infrastructure through code instead of through manual processes.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Terraform Modal -->
+    <div class="modal fade" id="terraformModal" tabindex="-1" role="dialog" aria-labelledby="terraformModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Terraform</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>HashiCorp Terraform is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share.</p>
+                <a href="https://www.terraform.io/">Link to the Official Terraform Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Jenkins Modal -->
+    <div class="modal fade" id="jenkinsModal" tabindex="-1" role="dialog" aria-labelledby="jenkinsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Jenkins</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Jenkins is a platform for creating a Continuous Integration/Continuous Delivery (CI/CD) environment.</p>
+                <a href="https://www.jenkins.io/">Link to the Official Jenkins Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Angular Modal -->
+    <div class="modal fade" id="angularModal" tabindex="-1" role="dialog" aria-labelledby="angularModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Angular</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Angular is a development platform, built on TypeScript.</p>
+                <a href="https://angular.io/">Link to the Official Angular Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Selenium Modal -->
+    <div class="modal fade" id="seleniumModal" tabindex="-1" role="dialog" aria-labelledby="seleniumModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Selenium</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Selenium is an open-source tool that automates web browsers. It provides a single interface that lets you write test scripts in programming languages like Ruby, Java, NodeJS, PHP, Perl, Python, and C#, among others.</p>
+                <a href="https://www.selenium.dev/selenium/docs/api/java/overview-summary.html">Link to the Official Selenium Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Java Modal -->
+    <div class="modal fade" id="javaModal" tabindex="-1" role="dialog" aria-labelledby="javaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Java</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+                <a href="https://docs.oracle.com/en/java/">Link to the Official Java Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- OWASP Modal -->
+    <div class="modal fade" id="owaspModal" tabindex="-1" role="dialog" aria-labelledby="owaspModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">OWASP Top 10</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications. Globally recognized by developers as the first step towards more secure coding.</p>
+                <a href="https://owasp.org/www-project-top-ten/#:~:text=The%20OWASP%20Top%2010%20is,step%20towards%20more%20secure%20coding.">Link to the Official OWASP Top 10 Documenation.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap Section -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

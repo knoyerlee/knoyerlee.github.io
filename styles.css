@@ -1,0 +1,68 @@
+body {
+    background-image: linear-gradient(to top left, #eae2b7, #fffcf2);
+    background-attachment: fixed;
+}
+
+hr {
+    border: 1px solid black;
+    width: 95%;
+}
+
+.header {
+    margin-top: 1em;
+}
+
+.slide-show {
+    margin-top: 2em;
+}
+
+.slide-summary {
+    color: black;
+}
+
+.contact-header {
+    margin-top: 2.5em;
+}
+
+.navbar-light {
+    background-color: #eb5e28;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.nav-link.disabled {
+    color: black;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color: black;
+}
+
+#DarkModeText {
+    cursor: default;
+}
+
+#DarkModeText:hover {
+    color: black;
+}
+
+.contact-images {
+    margin-top: 5em;
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
+
+.img-slide {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+  }
+
+.modal-spans {
+    cursor: pointer;
+}
